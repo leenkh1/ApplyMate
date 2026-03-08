@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ApplyMate — Tailor your CV to every JD</title>
+
+  <!-- Optional: premium font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/static/styles.css" />
+  <script defer src="/static/theme.js"></script>
+  <script defer src="/static/demo.js"></script>
+</head>
+
+<body>
+  <div class="bgDots"></div>
+
+  <!-- Top Nav -->
+  <header class="topbar">
+    <div class="topbarInner">
+      <div class="brand">
+        <img class="logoImg" src="/static/applymate-logo.png" alt="ApplyMate logo" />
+        <div>
+          <div class="brandTitle">ApplyMate</div>
+          <div class="brandSub">AI job-application agent</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="navLink" href="#product">Product</a>
+        <a class="navLink" href="#how">How it Works</a>
+        <a class="navLink" href="#demo">Demo</a>
+        <a class="navLink" href="#security">Security</a>
+        <a class="navLink" href="#faq">FAQ</a>
+      </nav>
+
+      <div class="navRight">
+        <a class="btn btnPrimary" href="/static/resume.html">Get Started</a>
+        <button id="themeToggle" class="iconBtn" type="button" aria-label="Toggle theme">☾</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="container">
+    <section class="hero" id="product">
+      <div class="heroGrid">
+        <div>
+          <span class="kicker">Transparent agent tracing • ATS-focused • Market-level role expectations</span>
+
+          <h1 class="h1">Tailor your CV to every JD—<br/>with market-level expectations.</h1>
+          <p class="lead">
+            ApplyMate blends your CV + the job description with a role-skill knowledge base
+            (skills common across many similar postings). Every run includes an explainable “Agent Trace”
+            so you can trust what changed and why.
+          </p>
+
+          <div class="heroCtas">
+            <a class="btn btnPrimary" href="#demo">Try Demo</a>
+            <a class="btn btnSecondary" href="#how">See How it Works</a>
+            <a class="btn btnSecondary" href="/static/resume.html">Open Resume Tailor</a>
+          </div>
+
+          <div class="heroMeta">
+            <span class="badge">✓ ATS-friendly outputs</span>
+            <span class="badge">✓ Skills gap analysis</span>
+            <span class="badge">✓ Rejection → improve → re-apply loop</span>
+            <span class="badge">✓ Approval → interview prep steps</span>
+          </div>
+        </div>
+
+        <!-- Right: product mock -->
+        <div class="mockPanel" aria-label="Product mock">
+          <div class="mockTop">
+            <div class="windowDots">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+            <div class="mockTitle">ApplyMate • Agent Run</div>
+          </div>
+
+          <div class="mockSplit">
+            <div class="miniPanel">
+              <div class="miniHead">CV Input</div>
+              <div class="miniLines">
+                <div class="line w92"></div>
+                <div class="line w72"></div>
+                <div class="line w65"></div>
+                <div class="line w50"></div>
+              </div>
+              <div class="demoHint">Paste or upload CV content.</div>
+            </div>
+
+            <div class="miniPanel">
+              <div class="miniHead">JD Input</div>
+              <div class="miniLines">
+                <div class="line w80"></div>
+                <div class="line w65"></div>
+                <div class="line w50"></div>
+                <div class="line w72"></div>
+              </div>
+              <div class="demoHint">Paste job description for the role.</div>
+            </div>
+          </div>
+
+          <div class="traceMini">
+            <div class="miniHead">Agent Trace</div>
+            <div class="traceRow">
+              <span class="traceStage">Analyze</span>
+              <span class="pill2">~0.6s</span>
+            </div>
+            <div class="traceRow">
+              <span class="traceStage">Retrieve expectations</span>
+              <span class="pill2">~1.2s</span>
+            </div>
+            <div class="traceRow">
+              <span class="traceStage">Draft</span>
+              <span class="pill2">~2.0s</span>
+            </div>
+            <div class="traceRow">
+              <span class="traceStage">Verify + finalize</span>
+              <span class="pill2">~0.9s</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="sectionTight">
+  <div class="card">
+    <div class="h2">Ready to ship a stronger application?</div>
+    <p class="lead">Run the demo, or skip straight to the full Resume Tailor flow.</p>
+    <div class="heroCtas">
+      <a class="btn btnSecondary" href="/static/resume.html">Resume Tailor</a>
+      <a class="btn btnSecondary" href="/static/email.html">Email Reply</a>
+      <a class="btn btnSecondary" href="/static/applications.html">My Applications</a>
+    </div>
+  </div>
+</section>
+
+    <!-- Social proof strip -->
+    <section class="proofStrip">
+      <div class="proofRow">
+        <div class="proofTitle">Built for students & early-career applicants across any role</div>
+        <div class="proofBadges">
+          <span class="badge">ATS-friendly</span>
+          <span class="badge">Transparent reasoning</span>
+          <span class="badge">Fast iterations</span>
+          <span class="badge">Actionable gaps</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -> Solution -->
+    <section class="sectionTight">
+      <div class="grid2">
+        <div class="card">
+          <h2 class="h2">The problem</h2>
+          <div class="cards3">
+            <div class="cardSoft">
+              <div class="cardIcon">📄</div>
+              <div class="h3">Generic CV</div>
+              <div class="cardText">Same document for every role → weak keyword alignment and unclear fit.</div>
+            </div>
+            <div class="cardSoft">
+              <div class="cardIcon">🎯</div>
+              <div class="h3">One-posting bias</div>
+              <div class="cardText">Optimizing only for one JD can miss market-wide expectations for the title.</div>
+            </div>
+            <div class="cardSoft">
+              <div class="cardIcon">🔎</div>
+              <div class="h3">No clarity</div>
+              <div class="cardText">You get edits without understanding what matters to recruiters.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="h2">The solution</h2>
+          <div class="cards3">
+            <div class="cardSoft">
+              <div class="cardIcon">🧠</div>
+              <div class="h3">Market expectations</div>
+              <div class="cardText">Role skill-map from many postings—not just one company’s phrasing.</div>
+            </div>
+            <div class="cardSoft">
+              <div class="cardIcon">✅</div>
+              <div class="h3">Keyword coverage</div>
+              <div class="cardText">Find missing skills and increase ATS relevance with controlled edits.</div>
+            </div>
+            <div class="cardSoft">
+              <div class="cardIcon">🧾</div>
+              <div class="h3">Explainable trace</div>
+              <div class="cardText">Step-by-step “Agent Trace” with prompts/outputs for transparency.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key features -->
+    <section class="section" aria-label="Features">
+      <h2 class="h2">Key features</h2>
+      <p class="lead">Everything you need to turn a single CV into a repeatable application workflow.</p>
+
+      <div class="cards6">
+        <div class="cardSoft">
+          <div class="cardIcon">✍️</div>
+          <div class="h3">CV Tailoring</div>
+          <div class="cardText">JD-aligned bullets focused on measurable impact and relevance.</div>
+        </div>
+
+        <div class="cardSoft">
+          <div class="cardIcon">🗺️</div>
+          <div class="h3">Market Expectations</div>
+          <div class="cardText">A “skills map” per job title from external role knowledge—not guesswork.</div>
+        </div>
+
+        <div class="cardSoft">
+          <div class="cardIcon">🧩</div>
+          <div class="h3">Gap Analysis</div>
+          <div class="cardText">Missing skills + practical fixes (projects, bullets, wording).</div>
+        </div>
+
+        <div class="cardSoft">
+          <div class="cardIcon">📈</div>
+          <div class="h3">ATS Optimization</div>
+          <div class="cardText">Coverage meter + suggested keywords to reduce screening risk.</div>
+        </div>
+
+        <div class="cardSoft">
+          <div class="cardIcon">🎤</div>
+          <div class="h3">Interview Prep</div>
+          <div class="cardText">Likely questions, story prompts, and role-specific talking points.</div>
+        </div>
+
+        <div class="cardSoft">
+          <div class="cardIcon">🔁</div>
+          <div class="h3">Rejection Loop</div>
+          <div class="cardText">Rejection → refine CV → re-apply. Approval → next-step interview plan.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how">
+      <h2 class="h2">How it works</h2>
+      <p class="lead">A clean workflow: analyze → retrieve → draft → verify → iterate.</p>
+
+      <div class="stepper">
+        <div class="stepPill">
+          <div class="stepTop">
+            <div class="stepTitle">Upload / paste CV</div>
+            <div class="stepNum">Step 1</div>
+          </div>
+          <div class="stepDesc">Bring your current resume text as-is.</div>
+        </div>
+
+        <div class="stepPill">
+          <div class="stepTop">
+            <div class="stepTitle">Paste JD</div>
+            <div class="stepNum">Step 2</div>
+          </div>
+          <div class="stepDesc">The job description anchors relevance and keywords.</div>
+        </div>
+
+        <div class="stepPill">
+          <div class="stepTop">
+            <div class="stepTitle">Retrieve expectations</div>
+            <div class="stepNum">Step 3</div>
+          </div>
+          <div class="stepDesc">Role-level skills from external knowledge base.</div>
+        </div>
+
+        <div class="stepPill">
+          <div class="stepTop">
+            <div class="stepTitle">Tailor + explain</div>
+            <div class="stepNum">Step 4</div>
+          </div>
+          <div class="stepDesc">Generate improved bullets with rationale and trace.</div>
+        </div>
+
+        <div class="stepPill">
+          <div class="stepTop">
+            <div class="stepTitle">Track outcome</div>
+            <div class="stepNum">Step 5</div>
+          </div>
+          <div class="stepDesc">Rejection → improvement plan. Next round → interview prep.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Embedded Demo -->
+    <section class="section" id="demo">
+      <h2 class="h2">Interactive demo</h2>
+      <p class="lead">
+        A lightweight in-page product demo: CV + JD → results tabs + agent trace.
+        Use sample data to see it instantly.
+      </p>
+
+      <div class="demoShell" role="region" aria-label="ApplyMate demo">
+        <div class="demoTopBar">
+          <div>
+            <div class="demoTitle">ApplyMate Demo • CV Tailoring + Transparency</div>
+            <div class="demoHint">This demo calls your backend <span class="kbd">POST /api/execute</span> using <span class="kbd">TASK: RESUME_TAILOR</span>.</div>
+          </div>
+          <div class="demoTopActions">
+            <button id="demoSample" class="btn btnSecondary" type="button">Use Sample CV/JD</button>
+            <button id="demoRun" class="btn btnPrimary" type="button">Run Demo</button>
+            <span id="demoStatus" class="small"></span>
+          </div>
+        </div>
+
+        <div class="demoGrid">
+          <!-- CV -->
+          <div class="demoCol">
+            <div class="demoColHead">
+              <div class="demoColTitle">CV input</div>
+              <span class="pill2">paste</span>
+            </div>
+            <label for="demoCv">Your CV</label>
+            <textarea id="demoCv" rows="16" placeholder="Paste CV text…"></textarea>
+            <div class="demoHint">Tip: keep experience bullets; the agent can rewrite for impact & alignment.</div>
+          </div>
+
+          <!-- JD -->
+          <div class="demoCol">
+            <div class="demoColHead">
+              <div class="demoColTitle">JD input</div>
+              <span class="pill2">paste</span>
+            </div>
+            <label for="demoJd">Job Description</label>
+            <textarea id="demoJd" rows="16" placeholder="Paste the job description…"></textarea>
+            <div class="demoHint">The demo also estimates skill coverage and highlights missing skills.</div>
+          </div>
+
+          <!-- Results -->
+          <div class="demoCol">
+            <div class="demoColHead">
+              <div class="demoColTitle">Results</div>
+              <span class="pill2">tabs</span>
+            </div>
+
+            <div class="tabs" id="demoTabs">
+              <button class="tab isActive" type="button" data-tab="cv">Tailored CV</button>
+              <button class="tab" type="button" data-tab="skills">Skills Coverage</button>
+              <button class="tab" type="button" data-tab="plan">Action Plan</button>
+              <button class="tab" type="button" data-tab="interview">Interview Prep</button>
+            </div>
+
+            <div class="tabPanel">
+              <div id="tab_cv">
+                <div class="small muted">Generated output (from your backend). If unavailable, the demo will show a polished fallback.</div>
+                <div id="demoCvOut" class="diffBox" style="margin-top:10px;"></div>
+              </div>
+
+              <div id="tab_skills" class="hidden">
+                <div class="small muted">Estimated coverage using a role skill-map + keyword overlap.</div>
+
+                <div class="progressRow">
+                  <div class="progressLabel"><span>Keyword coverage</span><span id="covPct">0%</span></div>
+                  <div class="progressTrack"><div id="covFill" class="progressFill"></div></div>
+                </div>
+
+                <div class="progressRow">
+                  <div class="progressLabel"><span>Market expectation match</span><span id="marketPct">0%</span></div>
+                  <div class="progressTrack"><div id="marketFill" class="progressFill"></div></div>
+                </div>
+
+                <div class="hr"></div>
+
+                <div class="h3">Missing skills (from JD)</div>
+                <div id="missingChips" class="chips"></div>
+              </div>
+
+              <div id="tab_plan" class="hidden">
+                <div class="h3">Next actions</div>
+                <div id="planOut" class="small" style="margin-top:10px; line-height:1.7;"></div>
+              </div>
+
+              <div id="tab_interview" class="hidden">
+                <div class="h3">Interview prep</div>
+                <div id="interviewOut" class="small" style="margin-top:10px; line-height:1.7;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trace -->
+          <div class="demoCol">
+            <div class="demoColHead">
+              <div class="demoColTitle">Agent Trace</div>
+              <span class="pill2">collapsible</span>
+            </div>
+
+            <div class="tracePanel">
+              <div class="small muted">Stages: Analyze → Retrieve → Draft → Verify → Finalize</div>
+              <div id="traceList" class="traceList"></div>
+
+              <div class="hr"></div>
+
+              <details>
+                <summary class="small" style="cursor:pointer; font-weight:900; color: var(--muted);">Raw steps (JSON)</summary>
+                <pre id="traceRaw" class="code" style="margin-top:10px;"></pre>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:14px;" class="small muted">
+        Want the full workflow pages? Use <a class="inlineLink" href="/static/resume.html">Resume Tailor</a> and <a class="inlineLink" href="/static/email.html">Email Reply</a>.
+      </div>
+    </section>
+
+    <!-- Security -->
+    <section class="section" id="security">
+      <h2 class="h2">Security & privacy</h2>
+      <p class="lead">Serious defaults for sensitive job-search data.</p>
+
+      <div class="cards3">
+        <div class="cardSoft">
+          <div class="h3">User control</div>
+          <div class="cardText">You decide what to paste/upload. No public sharing. Clear local state controls.</div>
+        </div>
+        <div class="cardSoft">
+          <div class="h3">Transparent logging</div>
+          <div class="cardText">Agent Trace shows prompts + outputs so you can verify behavior.</div>
+        </div>
+        <div class="cardSoft">
+          <div class="h3">Minimal retention</div>
+          <div class="cardText">Only what’s needed for the application loop; avoid unnecessary storage.</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <h2 class="h2">FAQ</h2>
+      <p class="lead">Fast answers for recruiters, teammates, and graders.</p>
+
+      <div class="faqGrid">
+        <details class="faq">
+          <summary>What makes ApplyMate different from “rewrite my CV” tools?</summary>
+          <div class="ans">It blends the JD with market-level role expectations (skills common across many postings) and shows an Agent Trace for transparency.</div>
+        </details>
+
+        <details class="faq">
+          <summary>Can I see what the agent actually did?</summary>
+          <div class="ans">Yes—each run outputs trace steps (prompt/response) so you can audit and understand the reasoning.</div>
+        </details>
+
+        <details class="faq">
+          <summary>What happens after rejection?</summary>
+          <div class="ans">ApplyMate proposes concrete fixes: bullet upgrades, missing skill coverage, and an action plan to re-apply stronger.</div>
+        </details>
+
+        <details class="faq">
+          <summary>What happens after approval / interview invite?</summary>
+          <div class="ans">It generates an interview prep pack: likely questions, talking points, and stories aligned to your tailored CV.</div>
+        </details>
+      </div>
+
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footerRow">
+        <div class="small">© <span id="year"></span> ApplyMate. Built with transparent agent tracing.</div>
+        <div class="footerLinks">
+          <a class="footerLink" href="/static/resume.html">Resume Tailor</a>
+          <a class="footerLink" href="/static/email.html">Email Reply</a>
+          <a class="footerLink" href="/static/applications.html">Applications</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ApplyMate — Email Reply</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/static/styles.css" />
+  <script defer src="/static/theme.js"></script>
+</head>
+
+<body>
+  <div class="bgDots"></div>
+
+  <header class="topbar">
+    <div class="topbarInner">
+      <div class="brand">
+        <img class="logoImg" src="/static/applymate-logo.png" alt="ApplyMate logo" />
+        <div>
+          <div class="brandTitle">ApplyMate</div>
+          <div class="brandSub">Email Reply</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="navLink" href="/static/index.html">Home</a>
+        <a class="navLink" href="/static/applications.html">Applications</a>
+        <a class="navLink" href="/static/resume.html">Resume Tailor</a>
+      </nav>
+
+      <div class="navRight">
+        <a class="btn btnGhost" href="/static/index.html#demo">Demo</a>
+        <button id="themeToggle" class="iconBtn" type="button" aria-label="Toggle theme">☾</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:18px;">
+    <section class="card">
+      <div class="cardHeader">
+        <h2 class="h2" style="margin:0;">Analyze recruiter email</h2>
+        <div class="lead" style="max-width:none;">
+          Email Reply works with applications created in Resume Tailor (so CV+JD can be loaded by <b>APPLICATION_ID</b>).
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="field">
+          <label>Choose application</label>
+          <select id="appSelect"></select>
+          <div id="noApps" class="hint hidden">
+            No saved applications found. Create one in
+            <a class="inlineLink" href="/static/resume.html">Resume Tailor</a>.
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Email subject (optional)</label>
+          <input id="emailSubject" type="text" placeholder="e.g., Interview invitation" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Recruiter email (paste text)</label>
+        <textarea id="emailText" rows="10" placeholder="Paste the recruiter email here..."></textarea>
+      </div>
+
+      <details class="advanced">
+        <summary>Advanced: view/edit raw prompt</summary>
+        <div class="field">
+          <label>Raw prompt sent to /api/execute</label>
+          <textarea id="prompt" rows="12"></textarea>
+        </div>
+        <div class="hint">Tip: run with <span class="kbd">Ctrl</span>+<span class="kbd">Enter</span>.</div>
+      </details>
+
+      <div class="actions">
+        <button id="runBtn" type="button">Run Agent</button>
+        <button id="sampleEmailBtn" class="secondary" type="button">Use sample email</button>
+        <button id="clearBtn" class="secondary" type="button">Clear</button>
+        <div id="status" class="status"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="cardHeaderRow">
+        <h2 class="h2" style="margin:0;">Result</h2>
+        <div class="row">
+          <button id="copyFinalBtn" class="secondary" type="button">Copy</button>
+        </div>
+      </div>
+      <div id="finalResponse" class="resultBox"></div>
+    </section>
+
+    <section class="card">
+      <div class="cardHeaderRow">
+        <h2 class="h2" style="margin:0;">Trace</h2>
+        <div class="row">
+          <button id="expandAllBtn" class="secondary" type="button">Expand all</button>
+          <button id="collapseAllBtn" class="secondary" type="button">Collapse all</button>
+        </div>
+      </div>
+      <div class="hint">Steps (module / prompt / response) are shown for transparency.</div>
+      <div id="steps" class="steps"></div>
+    </section>
+  </main>
+
+  <script src="/static/email.js"></script>
+</body>
+</html>

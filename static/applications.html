@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ApplyMate — Applications</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/static/styles.css" />
+  <script defer src="/static/theme.js"></script>
+</head>
+
+<body>
+  <div class="bgDots"></div>
+
+  <header class="topbar">
+    <div class="topbarInner">
+      <div class="brand">
+        <img class="logoImg" src="/static/applymate-logo.png" alt="ApplyMate logo" />
+        <div>
+          <div class="brandTitle">ApplyMate</div>
+          <div class="brandSub">Applications</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="navLink" href="/static/index.html">Home</a>
+        <a class="navLink" href="/static/resume.html">Resume Tailor</a>
+        <a class="navLink" href="/static/email.html">Email Reply</a>
+      </nav>
+
+      <div class="navRight">
+        <a class="btn btnGhost" href="/static/index.html#demo">Demo</a>
+        <button id="themeToggle" class="iconBtn" type="button" aria-label="Toggle theme">☾</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:18px;">
+    <section class="card">
+      <div class="cardHeaderRow">
+        <h2 class="h2" style="margin:0;">Your saved applications</h2>
+        <div class="row">
+          <input id="search" type="text" placeholder="Search by job title or company…" style="max-width:320px;" />
+          <button id="clearAllBtn" class="secondary" type="button">Clear all</button>
+        </div>
+      </div>
+
+      <div id="list" class="history"></div>
+      <div class="small muted">Tip: open an application to reuse context in Email Reply.</div>
+    </section>
+  </main>
+
+  <script src="/static/applications.js"></script>
+</body>
+</html>
